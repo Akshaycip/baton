@@ -1,0 +1,108 @@
+{
+  "lines": [
+    {
+      "id": "m1",
+      "voice": "maya",
+      "takes": 3,
+      "text": "I staked my savings with a small validator I really believe in."
+    },
+    {
+      "id": "m2",
+      "voice": "maya",
+      "takes": 3,
+      "text": "Then my rent went up, and I needed that money today.",
+      "human": "Then my rent went up, <sigh> and I needed that money today."
+    },
+    {
+      "id": "m3",
+      "voice": "maya",
+      "takes": 3,
+      "text": "But unstaking takes more than a day. And my validator would lose the stake."
+    },
+    {
+      "id": "n1",
+      "voice": "narrator",
+      "takes": 3,
+      "text": "Baton turns a NEAR stake into an NFT you can sell.",
+      "human": "Baton turns a near stake into an N F T you can sell."
+    },
+    {
+      "id": "n2",
+      "voice": "narrator",
+      "takes": 3,
+      "text": "The NFT is a real NEAR account, staked with a real validator. Whoever holds the NFT owns the stake.",
+      "human": "The N F T is a real near account, staked with a real validator. Whoever holds the N F T owns the stake."
+    },
+    {
+      "id": "n3",
+      "voice": "narrator",
+      "takes": 3,
+      "text": "When it changes hands, the stake keeps running. Only the holder changes."
+    },
+    {
+      "id": "s1",
+      "voice": "sam",
+      "takes": 3,
+      "text": "I keep some NEAR ready to buy stakes at a small discount. My offer just sits on chain, waiting.",
+      "human": "I keep some near ready to buy stakes at a small discount. My offer just sits on chain, waiting."
+    },
+    {
+      "id": "m4",
+      "voice": "maya",
+      "takes": 3,
+      "text": "So I pressed one button."
+    },
+    {
+      "id": "n4",
+      "voice": "narrator",
+      "takes": 3,
+      "text": "One transaction. Maya has the money. Sam holds the stake, and it keeps earning."
+    },
+    {
+      "id": "n5",
+      "voice": "narrator",
+      "takes": 3,
+      "text": "And look at the validator. Not one NEAR left.",
+      "human": "And look at the validator. Not one near left."
+    },
+    {
+      "id": "n6",
+      "voice": "narrator",
+      "takes": 3,
+      "text": "So what stops a seller from keeping a way back in?"
+    },
+    {
+      "id": "m5",
+      "voice": "maya",
+      "takes": 3,
+      "text": "I tried. My private room is closed, and my old key is dead.",
+      "human": "<chuckle> I tried. My private room is closed, and my old key is dead."
+    },
+    {
+      "id": "n7",
+      "voice": "narrator",
+      "takes": 3,
+      "text": "Nobody can sign for this account at all. It has no keys. And anyone can check."
+    },
+    {
+      "id": "n8",
+      "voice": "narrator",
+      "takes": 3,
+      "text": "This works with every validator on NEAR, today. No new token, no shared pool, and no change to NEAR.",
+      "human": "This works with every validator on near, today. No new token, no shared pool, and no change to near."
+    },
+    {
+      "id": "s2",
+      "voice": "sam",
+      "takes": 3,
+      "text": "I get paid to wait a day.",
+      "human": "<chuckle> I get paid to wait a day."
+    },
+    {
+      "id": "m6",
+      "voice": "maya",
+      "takes": 3,
+      "text": "And I got out without hurting the validator I chose."
+    }
+  ]
+}

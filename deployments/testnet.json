@@ -1,0 +1,14 @@
+{
+  "collection": "baton-relay.testnet",
+  "vault_code_hash": "GTCaiS2wo5rzWD7CyZSDvyRTzCDFmRK6itVW32Dugddo",
+  "pool_suffix": ".pool.f863973.m0",
+  "fee_bps": 10,
+  "pools": [
+    "stakely_v2.pool.f863973.m0",
+    "ts.pool.f863973.m0",
+    "aurora.pool.f863973.m0",
+    "01node.pool.f863973.m0"
+  ],
+  "deployed_at": "2026-11-09T17:58:00.941Z",
+  "deploy_tx": "4fmTFuipcZW92NoBAYid8fYJiS5mzTBshfZW7CXMKt1x"
+}

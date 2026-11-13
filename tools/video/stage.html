@@ -1,0 +1,94 @@
+<!doctype html>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap" />
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #0d1117; font-family: 'Archivo', sans-serif; }
+  #cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
+  #shot { display: block; width: 1920px; height: 1080px; }
+  #fade { position: absolute; inset: 0; background: #0d1117; opacity: 0; }
+
+  #badge {
+    position: absolute; left: 44px; bottom: 12px; display: flex; align-items: center; gap: 10px;
+    padding: 8px 15px; border-radius: 999px; background: rgba(13, 17, 23, 0.86); border: 1px solid #2b3440;
+    font: 600 17px/1 'Archivo', sans-serif; letter-spacing: 0.08em; color: #f0ede6;
+  }
+  #badge i { width: 11px; height: 11px; border-radius: 50%; background: #34d399; display: block; }
+  #chapter {
+    position: absolute; left: 44px; top: 30px; padding: 12px 24px; border-radius: 10px; background: #ef5a41; color: #fff;
+    font: 700 31px/1 'Archivo', sans-serif; letter-spacing: -0.01em; opacity: 0;
+  }
+
+  #caption { position: absolute; left: 0; right: 0; bottom: 56px; display: flex; justify-content: center; opacity: 0; }
+  #caption div { max-width: 1560px; padding: 20px 42px 24px; border-radius: 14px; background: rgba(9, 12, 17, 0.9); text-align: center; }
+  #who { display: block; font: 700 23px/1 'Archivo', sans-serif; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 11px; }
+  #who:empty { display: none; }
+  #text { display: block; font: 500 46px/1.25 'Archivo', sans-serif; color: #fbf8f1; }
+
+  #note {
+    position: absolute; right: 70px; top: 470px; width: 560px; display: flex; align-items: center; gap: 22px; padding: 24px 28px;
+    border-radius: 18px; background: #f5f1e8; color: #15181c; box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45); opacity: 0;
+  }
+  #note svg { width: 56px; height: 56px; flex: none; }
+  #note b { display: block; font: 700 34px/1.15 'Archivo', sans-serif; letter-spacing: -0.01em; }
+  #note span { display: block; font: 500 23px/1.3 'Archivo', sans-serif; color: #62666d; margin-top: 4px; }
+
+  #card {
+    position: absolute; inset: 0; background: #0d1117; opacity: 0; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; text-align: center; color: #f0ede6;
+  }
+  #card svg.mark { width: 112px; height: 112px; margin-bottom: 26px; }
+  #card h1 { margin: 0; font: 800 136px/1 'Archivo', sans-serif; letter-spacing: -0.04em; }
+  #card h2 { margin: 22px 0 46px; font: 600 58px/1.15 'Archivo', sans-serif; letter-spacing: -0.02em; }
+  #card p { margin: 0; font: 500 40px/1.3 'Archivo', sans-serif; color: #9aa3ae; }
+  #card p em { font-style: normal; color: #ef5a41; font-weight: 700; }
+  #card small { position: absolute; left: 0; right: 0; bottom: 50px; font: 400 25px/1.4 'Archivo', sans-serif; color: #7c8794; }
+</style>
+
+<div id="cam"><img id="shot" alt="" /><div id="mask" style="position:absolute;left:0;top:0;width:1920px;background:#0d1117;height:0"></div></div>
+<div id="chapter"></div>
+<div id="badge"><i></i>LIVE ON NEAR TESTNET</div>
+<div id="note">
+  <svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="11" fill="#d8432b" /><path d="M24 11c-6 0-9.5 4.3-9.5 10v6.5L11 32v2h26v-2l-3.5-4.5V21c0-5.7-3.5-10-9.5-10Zm-4 25a4 4 0 0 0 8 0h-8Z" fill="#fff" /></svg>
+  <div><b id="note-text"></b><span>From your landlord, just now</span></div>
+</div>
+<div id="caption"><div><span id="who"></span><span id="text"></span></div></div>
+<div id="card">
+  <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#ef5a41" /><rect x="27" y="14" width="10" height="36" rx="5" fill="#fff" transform="rotate(35 32 32)" /></svg>
+  <h1>Baton</h1>
+  <h2>Sell your NEAR stake without unstaking.</h2>
+  <p>One transaction. Any validator. <em>The stake never stops.</em></p>
+  <small>Filmed live on NEAR testnet &nbsp;·&nbsp; Maya and Sam are fictional, and their voices are AI-generated</small>
+</div>
+<div id="fade"></div>
+
+<script>
+  const $ = (id) => document.getElementById(id);
+  const colours = { Maya: '#ff8b76', Sam: '#7dc2ff' };
+  let current = '';
+  window.draw = async (s) => {
+    if (s.src && s.src !== current) {
+      const img = $('shot');
+      img.src = s.src;
+      await img.decode().catch(() => {});
+      current = s.src;
+    }
+    $('cam').style.transform = `translate(${s.tx}px,${s.ty}px) scale(${s.zoom})`;
+    $('mask').style.height = `${s.maskTop ?? 0}px`;
+    $('badge').style.opacity = s.badge;
+    $('fade').style.opacity = s.fade;
+    $('chapter').style.opacity = s.chapter ? 1 : 0;
+    if (s.chapter) $('chapter').textContent = s.chapter;
+    $('card').style.opacity = s.card;
+    $('note').style.opacity = s.noteShown;
+    $('note').style.transform = `translateY(${(1 - s.noteShown) * -26}px)`;
+    if (s.note) $('note-text').textContent = s.note;
+    $('caption').style.opacity = s.captionOpacity;
+    if (s.text !== undefined) {
+      $('text').textContent = s.text;
+      $('who').textContent = s.who;
+      $('who').style.color = colours[s.who] ?? '#fff';
+    }
+  };
+  window.ready = async () => { await document.fonts.ready; };
+</script>

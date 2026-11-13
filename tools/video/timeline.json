@@ -1,0 +1,158 @@
+{
+ "duration": 93.85,
+ "lines": [
+  {
+   "id": "m1",
+   "take": 1,
+   "at": 0.45,
+   "seconds": 3.72,
+   "shot": "open",
+   "voice": "maya",
+   "text": "I staked my savings with a small validator I really believe in."
+  },
+  {
+   "id": "m2",
+   "take": 2,
+   "at": 4.57,
+   "seconds": 4.97,
+   "shot": "rent",
+   "voice": "maya",
+   "text": "Then my rent went up, and I needed that money today."
+  },
+  {
+   "id": "m3",
+   "take": 1,
+   "at": 10.04,
+   "seconds": 5.42,
+   "shot": "wait",
+   "voice": "maya",
+   "text": "But unstaking takes more than a day. And my validator would lose the stake."
+  },
+  {
+   "id": "n1",
+   "take": 0,
+   "at": 16.01,
+   "seconds": 4.86,
+   "shot": "idea",
+   "voice": "narrator",
+   "text": "Baton turns a NEAR stake into an NFT you can sell."
+  },
+  {
+   "id": "n2",
+   "take": 1,
+   "at": 21.37,
+   "seconds": 7.77,
+   "shot": "nft",
+   "voice": "narrator",
+   "text": "The NFT is a real NEAR account, staked with a real validator. Whoever holds the NFT owns the stake."
+  },
+  {
+   "id": "n3",
+   "take": 0,
+   "at": 29.59,
+   "seconds": 5.01,
+   "shot": "runs",
+   "voice": "narrator",
+   "text": "When it changes hands, the stake keeps running. Only the holder changes."
+  },
+  {
+   "id": "s1",
+   "take": 2,
+   "at": 35.1,
+   "seconds": 5.37,
+   "shot": "offer",
+   "voice": "sam",
+   "text": "I keep some NEAR ready to buy stakes at a small discount. My offer just sits on chain, waiting."
+  },
+  {
+   "id": "m4",
+   "take": 2,
+   "at": 40.97,
+   "seconds": 1.95,
+   "shot": "press",
+   "voice": "maya",
+   "text": "So I pressed one button."
+  },
+  {
+   "id": "n4",
+   "take": 1,
+   "at": 45.62,
+   "seconds": 5.48,
+   "shot": "sold",
+   "voice": "narrator",
+   "text": "One transaction. Maya has the money. Sam holds the stake, and it keeps earning."
+  },
+  {
+   "id": "n5",
+   "take": 1,
+   "at": 51.6,
+   "seconds": 3.74,
+   "shot": "validator",
+   "voice": "narrator",
+   "text": "And look at the validator. Not one NEAR left."
+  },
+  {
+   "id": "n6",
+   "take": 2,
+   "at": 58.49,
+   "seconds": 3.27,
+   "shot": "question",
+   "voice": "narrator",
+   "text": "So what stops a seller from keeping a way back in?"
+  },
+  {
+   "id": "m5",
+   "take": 1,
+   "at": 62.16,
+   "seconds": 5.04,
+   "shot": "tried",
+   "voice": "maya",
+   "text": "I tried. My private room is closed, and my old key is dead."
+  },
+  {
+   "id": "n7",
+   "take": 1,
+   "at": 67.9,
+   "seconds": 5.6,
+   "shot": "verify",
+   "voice": "narrator",
+   "text": "Nobody can sign for this account at all. It has no keys. And anyone can check."
+  },
+  {
+   "id": "n8",
+   "take": 1,
+   "at": 74.25,
+   "seconds": 7.77,
+   "shot": "every",
+   "voice": "narrator",
+   "text": "This works with every validator on NEAR, today. No new token, no shared pool, and no change to NEAR."
+  },
+  {
+   "id": "s2",
+   "take": 0,
+   "at": 82.52,
+   "seconds": 2.03,
+   "shot": "sam",
+   "voice": "sam",
+   "text": "I get paid to wait a day."
+  },
+  {
+   "id": "m6",
+   "take": 0,
+   "at": 85,
+   "seconds": 3.4,
+   "shot": "maya",
+   "voice": "maya",
+   "text": "And I got out without hurting the validator I chose."
+  }
+ ],
+ "cues": {
+  "idea": 15.809999999999999,
+  "work": 34.89999999999999,
+  "sold": 45.169999999999995,
+  "safe": 58.239999999999995,
+  "matters": 74,
+  "end": 89.25
+ },
+ "missing": []
+}

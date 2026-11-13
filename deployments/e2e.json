@@ -1,0 +1,70 @@
+{
+  "steps": [
+    {
+      "name": "mint",
+      "tx": "36YoYsSaZqix7y6CZgZyRDuvu6VVGMGt5i4EF3TwUvVR",
+      "tgas_burnt": 33,
+      "failures": [],
+      "value": true
+    },
+    {
+      "name": "list",
+      "tx": "GPk1xWRiL4QYCvKDqb9MjJZBZM2TrFGsTyEAcBuMqan5",
+      "tgas_burnt": 9,
+      "failures": [],
+      "value": true
+    },
+    {
+      "name": "buy",
+      "tx": "5WPHTVgPaD8JKJhTdD94wHAp1gtyRtDqWKtgWn66MCDQ",
+      "tgas_burnt": 8,
+      "failures": []
+    },
+    {
+      "name": "old holder refused",
+      "tx": "GrnSoHz34VZPtRrQvDHjw7iJ9CQHAvr1G7EadxKkcNVF",
+      "tgas_burnt": 2,
+      "failures": [
+        {
+          "error": "{\"ActionError\":{\"index\":0,\"kind\":{\"FunctionCallError\":{\"ExecutionError\":\"Smart contract panicked: Only the current holder can do this\"}}}}"
+        }
+      ]
+    },
+    {
+      "name": "place offer",
+      "tx": "B7h3hMWfQRdoXToN8uaiJbM1jcXq7LTYH93h5Bo2KuEt",
+      "tgas_burnt": 2,
+      "failures": [],
+      "value": "1"
+    },
+    {
+      "name": "sell into offer",
+      "tx": "BnppVqySf6hRfyM7ChfW8Cs6pFHsfZzYZrv6cZyvf3qB",
+      "tgas_burnt": 15,
+      "failures": [],
+      "value": true
+    },
+    {
+      "name": "unstake",
+      "tx": "HrMnttQu1BdWZfvosLCA6BkcNhNEYh4LmrY5CcXdCL85",
+      "tgas_burnt": 20,
+      "failures": [],
+      "value": true
+    },
+    {
+      "name": "withdraw",
+      "tx": "6nP5AqA3TaPyrwYEZNDCDSQqs9nWFTDEVreHmSQeZpvJ",
+      "tgas_burnt": 12,
+      "failures": [],
+      "value": true
+    },
+    {
+      "name": "claim",
+      "tx": "87iiXe87hxHUfeeS9hT9iULy73J6bN8tYGpxCjxKEWpi",
+      "tgas_burnt": 9,
+      "failures": [],
+      "value": "2000000000000000000000001"
+    }
+  ],
+  "token": "b1.baton-relay.testnet"
+}

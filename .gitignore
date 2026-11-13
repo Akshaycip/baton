@@ -1,0 +1,10 @@
+node_modules/
+target/
+app/dist/
+.env
+.env.*
+!.env.example
+*.log
+/deployments/*.local.json
+video/raw/
+.claude/

@@ -1,0 +1,12 @@
+[package]
+name = "baton-collection"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Title registry and market for Batons: NEP-171 tokens that are live NEAR stake."
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+near-sdk = { workspace = true }

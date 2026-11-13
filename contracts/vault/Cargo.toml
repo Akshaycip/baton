@@ -1,0 +1,12 @@
+[package]
+name = "baton-vault"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "One Baton's account: a keyless delegator that obeys only its parent collection."
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+near-sdk = { workspace = true }
